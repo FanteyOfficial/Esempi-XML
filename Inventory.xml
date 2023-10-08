@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE inventory [
+    <!ELEMENT inventory (item+)>
+    <!ELEMENT item (damage, description, rarity)>
+    <!ATTLIST item name CDATA #REQUIRED>
+    <!ATTLIST item lv CDATA #REQUIRED>
+    <!ELEMENT damage (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT rarity (#PCDATA)>
+    <!ATTLIST inventory id CDATA #REQUIRED>
+]>
+
+<inventory id="player">
+    <item name="sword" lv="10">
+        <damage>70</damage>
+        <description>An ancent sword from other world</description>
+        <rarity>Uncommon</rarity>
+    </item>
+    <item name="stick" lv="0">
+        <damage>1</damage>
+        <description>A stick from a tree</description>
+        <rarity>Common</rarity>
+    </item>
+    <item name="bow" lv="3">
+        <damage>30</damage>
+        <description>A bow</description>
+        <rarity>Rare</rarity>
+    </item>
+</inventory>
