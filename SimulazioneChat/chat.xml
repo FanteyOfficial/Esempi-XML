@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE chat [
+    <!ELEMENT chat (message*)>
+    <!ATTLIST chat id ID #REQUIRED>
+    <!ELEMENT message (orario, data, content, viewed)>
+    <!ATTLIST message mittente CDATA #REQUIRED>
+    <!ATTLIST message destinatario CDATA #REQUIRED>
+    <!ATTLIST message numero CDATA #REQUIRED>
+    <!ELEMENT orario (#PCDATA)>
+    <!ELEMENT data (#PCDATA)>
+    <!ELEMENT content (#PCDATA)>
+    <!ELEMENT viewed (#PCDATA)>
+]>
+
+<chat id="chat-001">
+    <message mittente="Lorenzo" destinatario="Giovannino" numero="123">
+        <orario>
+            7:00
+        </orario>
+        <data>
+            10/05/2023
+        </data>
+        <content>
+            Ciao come va?
+        </content>
+        <viewed>
+            true
+        </viewed>
+    </message>
+    <message mittente="Giovannino" destinatario="Lorenzo" numero="124">
+        <orario>
+            7:01
+        </orario>
+        <data>
+            10/05/2023
+        </data>
+        <content>
+            Bene tu?
+        </content>
+        <viewed>
+            true
+        </viewed>
+    </message>
+    <message mittente="Lorenzo" destinatario="Giovannino" numero="125">
+        <orario>
+            7:02
+        </orario>
+        <data>
+            10/05/2023
+        </data>
+        <content>
+            Bene grazie
+        </content>
+        <viewed>
+            true
+        </viewed>
+    </message>
+    <message mittente="Giovannino" destinatario="Lorenzo" numero="126">
+        <orario>
+            7:03
+        </orario>
+        <data>
+            10/05/2023
+        </data>
+        <content>
+            Hai visto il nuovo film?
+        </content>
+        <viewed>
+            true
+        </viewed>
+    </message>
+    <message mittente="Lorenzo" destinatario="Giovannino" numero="127">
+        <orario>
+            7:04
+        </orario>
+        <data>
+            10/05/2023
+        </data>
+        <content>
+            No, non ancora
+        </content>
+        <viewed>
+            false
+        </viewed>
+    </message>
+    <message mittente="Lorenzo" destinatario="Giovannino" numero="128">
+        <orario>
+            7:05
+        </orario>
+        <data>
+            10/05/2023
+        </data>
+        <content>
+            Lo andrò a vedere!
+        </content>
+        <viewed>
+            false
+        </viewed>
+    </message>
+</chat>
