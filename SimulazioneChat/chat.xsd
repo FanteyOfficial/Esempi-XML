@@ -11,9 +11,13 @@
                             <xs:element name="content" type="xs:string" />
                             <xs:element name="viewed" type="xs:boolean" />
                         </xs:sequence>
+                        <xs:attribute name="mittente" type="xs:string" use="required" />
+                        <xs:attribute name="destinatario" type="xs:string" use="required" />
+                        <xs:attribute name="numero" type="xs:string" use="required" />
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
+            <xs:attribute name="id" type="xs:ID" use="required" />
         </xs:complexType>
     </xs:element>
 </xs:schema>
